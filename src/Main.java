@@ -6,6 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
+        task8();
 
     }
 
@@ -15,7 +17,7 @@ public class Main {
             byte dog = 15;
             short rabbit = 345;
             int cat = 123156;
-            long orange = 94228395529l;
+            long orange = 94228324125215529l;
             float money = 84283.5f;
             double dollar = 38495.2;
 
@@ -30,7 +32,7 @@ public class Main {
             System.out.println("Задача 2");
 
             float pig = 27.12f;
-            long people = 987678965549l;
+            long people = 987678965234549l;
             double banana = 2.786;
             short meat = 569;
             short time = -159;
@@ -85,7 +87,6 @@ public class Main {
 
             byte banana = 5;
             short gramsPerKilo = 1000;
-            byte oneGram = 1;
             byte oneBananaGrams = 80;
             short milk = 2;
             byte gramsPerMl = 105;
@@ -104,6 +105,43 @@ public class Main {
 
             byte weightKg = 7;
             short grPerKg = 1000;
+            int weightGr = weightKg * grPerKg;
+            short diet250 = 250;
+            short diet500 = 500;
+            int dayPerDiet250 = weightGr / diet250;
+            int dayPerDiet500 = weightGr / diet500;
+
+            System.out.println(dayPerDiet250 + " дней потребуется для похудения при рационе питания для похудения на 250 грамм.");
+            System.out.println(dayPerDiet500 + " дней потребуется для похудения при рационе питания для похудения на 500 грамм");
+            int meanDaysDiet = (dayPerDiet250 + dayPerDiet500) / 2;
+            System.out.println("Среднее время для похудения на 7 килограмм = " + meanDaysDiet);
+
+        }
+        public static void task8() {
+            System.out.println("Задаа 8");
+
+            int maria = 67760;
+            int denis = 83690;
+            int kristina = 76230;
+            byte year = 12;
+            byte increase110 = 110;
+            byte base = 100;
+            int mariaYear = maria * year;
+            int denisYear = denis * year;
+            int kristinaYear = kristina * year;
+            double mariaIncrease = (double)maria / base * increase110;
+            double denisIncrease = (double)denis / base * increase110;
+            double kristinaIncrease = (double)kristina / base * increase110;
+            double mariaInYear = mariaIncrease * year;
+            double denisInYear = denisIncrease * year;
+            double kristinaInYear = kristinaIncrease * year;
+            double diffMaria = mariaInYear - mariaYear;
+            double diffDenis = denisInYear - denisYear;
+            double diffKristina = kristinaInYear - kristinaYear;
+
+            System.out.println("Маша теперь получает " + mariaInYear + " рублей. Годовой доход вырос на " + diffMaria + " рублей");
+            System.out.println("Денис теперь получает " + denisInYear + " рублей. Годовой доход вырос на " + diffDenis + " рублей");
+            System.out.println("Кристина теперь получает " + kristinaInYear + " рублей. Годовой доход вырос на " + diffKristina + " рублей");
 
         }
 
