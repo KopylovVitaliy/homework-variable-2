@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
 
     }
 
@@ -82,8 +83,30 @@ public class Main {
         public static void task6() {
             System.out.println("Задача 6");
 
+            byte banana = 5;
+            short gramsPerKilo = 1000;
+            byte oneGram = 1;
+            byte oneBananaGrams = 80;
+            short milk = 2;
+            byte gramsPerMl = 105;
+            byte gramsOneIceCream = 100;
+            byte iceCream = 2;
+            byte agg = 4;
+            int oneAgg = 70;
+            int allWeightGrams = oneBananaGrams * banana + gramsPerMl * milk  + iceCream * gramsOneIceCream + agg * oneAgg;
+            float allWeightKg = (float)allWeightGrams / gramsPerKilo;
+
+            System.out.println("Вес спортзавтрака в граммах равен " + allWeightGrams);
+            System.out.println("Вес спортзавтрака в килограммах равен " + allWeightKg);
+        }
+        public static void task7() {
+            System.out.println("Задача 7");
+
+            byte weightKg = 7;
+            short grPerKg = 1000;
 
         }
+
 
 
 
